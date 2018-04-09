@@ -11,6 +11,16 @@ $(document).ready(function() {
         },
 		onSelect : peliculaSeleccionada // función que responde cuando elegimos una película
 	})
+
+    $("#peliculaAutoComplete").keydown(function(event){
+        if(event.keyCode == 13) {
+            if($("#peliculaAutoComplete").val().length==0) {
+                event.preventDefault()
+                return false
+            }
+        }
+    })
+
 });
 
 /** Llamada asincrónica a buscar películas **/
