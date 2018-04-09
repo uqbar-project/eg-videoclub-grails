@@ -1039,3 +1039,7 @@ html, body, .st-container, .st-pusher, .st-content {
         float: none;
     }
 }
+
+hr.style1{
+    border-top: 1px solid #8c8b8b;
+}

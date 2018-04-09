@@ -4,7 +4,9 @@
 	<g:if test="${peliculas}">
 		<table class="table table-striped">
 			<thead class="success">
-				<h3>Pel&iacute;culas a llevar</h3>
+                <br>
+                <h1><span class="label label-primary">Pel&iacute;culas a llevar</span></h1>
+                <br>
 			</thead>
 			<tbody>
 				<g:each in="${peliculas}" status="i" var="pelicula">
@@ -17,6 +19,9 @@
 								<span class="glyphicon glyphicon-remove"></span>
 							</a>
 						</div>
+					</div>
+					<div class="row">
+						<hr class="style1"></hr>
 					</div>
 				</g:each>
 			</tbody>
